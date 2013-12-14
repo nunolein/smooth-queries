@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	margin-top:0px; /* esto hace que todo lo que coloques esté pegado arriba */
+	font-size:16px;
+	color:#333;
+	height:2000px;
+	font-family:Helvetica, sans-serif;
+}
+
+
+.container {
+	margin:0 auto;
+	width:1024px;
+	visibility:visible;
+	height:100%;
+	background-color:#CCC;
+	transition:width .5s; /* para que sean smooth las transiciones de tamaños */
+    -o-transition:width .5s; 
+    -moz-transition:width .5s; 
+    -webkit-transition:width .5s;	
+	}
+	
+	
+@media (max-width: 900px) {
+
+.container {
+	width:90%;
+}
+
+@media (max-width: 700px) {
+
+.container {
+	width:95%;
+}
+
+@media (max-width: 540px) {
+
+.container {
+	width:100%;
+}
+
