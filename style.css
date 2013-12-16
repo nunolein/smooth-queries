@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	margin-top:0px; /* esto hace que todo lo que coloques esté pegado arriba */
+	font-size:1em;
+	color:#333;
+	height:2000px;
+	font-family:Helvetica, sans-serif;
+}
+
+
+.container {
+	margin:0 auto;
+	width:1024px;
+	visibility:visible;
+	height:100%;
+	/* background-color:#CCC; */
+	transition:width .3s; /* para que sean smooth las transiciones de tamaños */
+    -o-transition:width .3s; 
+    -moz-transition:width .3s; 
+    -webkit-transition:width .3s;	
+	}
+	
+.divider-line-row {
+	float:left;
+	width:100%;
+	height:10px;
+}
+
+.blk-10pxline-divider {
+	float:left;
+	margin-left:1.5%;
+	margin-bottom:2%;
+	width:100px;
+	height:10px;
+	background-color:#333;
+}
+
+.big-title-area {
+	margin-left:0%;
+	float:left;
+	width:100%;
+	height:15%;
+	/* background-color:#0FF; */
+	visibility:visible;		
+}
+
+.big-title-area p{
+	font-size:3.2em;
+	font-weight:bold;
+	float:left;
+	margin-left:1.5%;
+	margin-right:2%;
+	margin-bottom:3%;
+	line-height:1.2em;
+	transition:all .2s ease; /* para que sean smooth las transiciones de tamaños */
+    -o-transition:all .2s ease; 
+    -moz-transition:all .2s ease; 
+    -webkit-transition:all .2s ease;
+}
+
+.subtext p{
+	font-size:1.5em;
+	font-weight:normal;
+	margin-left:1.5%;
+	margin-right:2%;
+	margin-bottom:2%;
+	line-height:1em;
+	transition:all .2s ease; /* para que sean smooth las transiciones de tamaños */
+    -o-transition:all .2s ease; 
+    -moz-transition:all .2s ease; 
+    -webkit-transition:all .2s ease;
+}
+	
+	
+@media (max-width: 900px) {
+
+.container {
+	width:90%;
+}
+
+.big-title-area p{
+	font-size:2em;
+}
+
+.subtext p{
+	font-size:1em;
+}
+
+@media (max-width: 700px) {
+
+.container {
+	width:95%;
+}
+
+@media (max-width: 540px) {
+
+.container {
+	width:100%;
+}
+
